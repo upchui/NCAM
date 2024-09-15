@@ -1,0 +1,16 @@
+version: "2.1"
+services:
+  oscam:
+    build: .
+    container_name: ncam
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Etc/UTC
+    volumes:
+      - "./config:/config"
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+      - /dev/ttyUSB1:/dev/ttyUSB1
+    restart: "always"
+    network_mode: "host"
