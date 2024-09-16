@@ -31,7 +31,7 @@ RUN cd /usr/local/src/ncam && ./config.sh \
              LEDSUPPORT \
              READ_SDT_CHARSETS \
              WITH_SIGNING \
-    --enable WITH_SSL \
+             WITH_SSL \
              WITH_NEUTRINO \
              IRDETO_GUESSING \
              WITH_DEBUG \
